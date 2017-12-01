@@ -1,0 +1,14 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: site.title }}{% if site.description %}: {{ site.description }}{% endif %}</title>
+    <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.tagline }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | prepend: site.baseurl | relative_url }}">
+
+    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl | relative_url }}">    
+    <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | prepend: site.baseurl | relative_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/img/apple-touch-icon-72x72.png' | prepend: site.baseurl | relative_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ '/assets/img/apple-touch-icon-114x114.png' | prepend: site.baseurl | relative_url }}">
+</head>

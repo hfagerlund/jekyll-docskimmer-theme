@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+    {% include skiptocontent.html %}
+    <div id="top" class="wrapper">
+     {% include header.html %}
+     
+     {% include search.html %}
+
+     <a class="backtotoc" href="{{site.url}}" title="Back to Table of Contents (homepage)">&larr; <abbr title="Table Of Contents">TOC</abbr></a>
+
+     <main id="maincontent" role="main">
+      {%- for collection in site.collections -%}
+        {%- assign name = collection.label -%}
+        {%- for project in site[name] -%}
+		      {%- if page.url contains project.title -%}
+		        <h1>{{- project.title -}}</h1>
+		        {%- if page.img -%}
+		          {%- include images.html -%}
+		        {%- endif -%}
+		        {{- content -}}
+		        {%- include links.html -%}
+		        {%- if page.related -%}
+		          <hr class="half-col" />
+		          <h3>Related:</h3>
+		          <ul>
+		          {%- for item in page.related -%}
+		              <li>
+		                  <a href="{{- item.url -}}">{{- item.title -}}</a> &mdash; {{- item.description -}}
+		              </li>
+		          {%- endfor -%}
+		          </ul>
+		        {%- endif -%}
+		      {%- endif -%}
+        {%- endfor -%}
+      {% endfor %}
+     </main>
+
+    {% include footer.html %}
+    
+  </div><!-- END .wrapper -->
+  <a class="skiptotop" href="#top">back to top</a>
+
+    <script src="/assets/js/require.js"></script>
+    {% if site.google_analytics %}
+        <script src="/assets/js/analytics.js"></script>
+    {% endif %}
+  </body>
+</html>

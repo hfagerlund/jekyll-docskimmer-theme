@@ -1,0 +1,9 @@
+{%- if project.docs_url.size > 1 -%}
+    <ul class="project-urls">
+       <li class="project-urls__item"><a class="project-urls__link" href="{{ project.docs_url }}" title="Visit {{ project.title }} documentation site (external site)">Docs</a></li>
+       <li class="project-urls__item"><a class="project-urls__link" href="{{ project.repo_url }}" title="Visit {{ project.title }} repository (external site)">Repo</a></li>
+    </ul>
+{%- else -%}
+        <a class="project-list__link" href="{{ project.repo_url }}" title="Visit {{ project.title }} repository (external site)">Repo</a>
+{%- endif -%}
+

@@ -1,0 +1,11 @@
+{
+    "docs": [
+        {% for project in include.repos %}
+        {
+          "location" : "{% if site.collections[0].output %}/{{ site.collections[0].label }}/{{ project.title | handleize }}{% else %}/index.html#{{ project.title | handleize }}{% endif %}",
+          "text"     : "{{ project.description | escape | append: project.content | strip_html | strip_newlines }}",
+          "title"    : "{{ project.title }}"
+        } {% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
+    ]
+}

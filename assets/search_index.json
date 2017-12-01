@@ -1,0 +1,6 @@
+---
+layout: 
+---
+
+{% include search-index.html repos=site.gh_projects %}
+

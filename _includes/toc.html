@@ -1,0 +1,13 @@
+<dl>
+{%- for project in include.repos -%}
+    <dt class="project-list__term">
+        <dfn id="{{ project.title | handleize }}">
+          {{- project.title -}}
+        </dfn>
+    </dt>
+    <dd class="project-list__description">
+    {{ project.description }}{% if site.collections[0].output %}&hellip; <a href="{{ project.url }}">[Read more]</a>{% endif %}
+    {%- include links.html -%}
+    </dd>
+{%- endfor -%}
+</dl>

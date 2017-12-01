@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+  {% include head.html %}
+
+  <body>
+    {% include skiptocontent.html %}
+    <div id="top" class="wrapper">
+     {% include header.html %}
+     
+     {% include search.html %}
+ 
+     <main id="maincontent" role="main">
+      {{- content -}}
+     </main>
+
+    {% include footer.html %}
+    
+  </div><!-- END .wrapper -->
+
+  <a class="skiptotop" href="#top">back to top</a>
+  <script src="/assets/js/require.js"></script>
+  {% if site.google_analytics %}
+      <script src="/assets/js/analytics.js"></script>
+  {% endif %}
+  </body>
+</html>
