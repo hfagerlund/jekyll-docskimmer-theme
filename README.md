@@ -50,7 +50,7 @@ The following are **docSkimmer** theme-specific settings in `_config.yml`:
 | Parameter | Format | Description |
 | --- | --- | --- |
 | **author** | text<br>*example: Your Name* | This name is displayed in 'author' meta tag |
-| **copyright** | text<br>*example: Copyright &copy; YYYY Your Name* | Any text here is displayed in the footer wrapped in <p></p> tags |
+| **copyright** | text<br>*example: Copyright &copy; YYYY Your Name* | Any text here is displayed in the footer wrapped in `<p></p>` tags |
 | **google_analytics** | tracking ID<br>*example: UA-00000000-0* | *(OPTIONAL)* Replace numeric placeholders with a Google Analytics property ID to use client-side tracking, or leave blank |
 | **tagline** | text<br>*example: Your tagline text* | *(OPTIONAL)* Displayed in: (1.) 'description' meta tag (after colon) if no 'description' site setting is provided, and/or (2.) as a heading in the main header of the site (note: if no tagline is provided, the site description is displayed as the heading instead) |
 
@@ -58,15 +58,15 @@ The following are theme-specific settings that must be included in the front-mat
 
 | Parameter | Format | Description |
 | --- | --- | --- |
-| **title** | text<br>*example: Your Page Title* | This text is displayed as the content of the <h1></h1> tag |
+| **title** | text<br>*example: Your Page Title* | This text is displayed as the content of the `<h1></h1>` tag |
 | **description** | text<br>*example: A short descriptive paragraph about the page goes here* | This text is displayed as (1.) the 'blurb' for the listing on the homepage/'table of contents' page |
-| **img** | relative URL<br>*example: /assets/img/<your-collection-name-without-leading-underscore>/<your-page-name>/<your-image-name>.<png|jpg|jpeg|gif>* | *(OPTIONAL)* May be used to display, for example, a screenshot of the project on its inner details page. **MUST** follow the __naming conventions__ shown in the example - eg. for an image to be displayed on a project page, first: create a directory in the root of your Jekyll site under /assets/img/ that has the __same name as your collection__ (without the `_` in front of it); next: create a sub-directory __with the same name__ as the `.md` page for the project, and place your image in it. The theme will *automatically* display the image on the correct page. |
+| **img** | relative URL<br>*example: `/assets/img/<your-collection-name-without-leading-underscore>/<your-page-name>/<your-image-name>.<png|jpg|jpeg|gif>`* | *(OPTIONAL)* May be used to display, for example, a screenshot of the project on its inner details page. **MUST** follow the __naming conventions__ shown in the example - eg. for an image to be displayed on a project page, first: create a directory in the root of your Jekyll site under /assets/img/ that has the __same name as your collection__ (without the `_` in front of it); next: create a sub-directory __with the same name__ as the `.md` page for the project, and place your image in it. The theme will *automatically* display the image on the correct page. |
 | **img_alt** | text<br>*example: Your image caption text* | *(REQUIRED if using 'img')* Displayed as `alt` attribute value if an `img` is provided |
-| **docs_url** | absolute URL<br>*example: https://<path-to-documentation-site>/* | *(OPTIONAL)* Links to accompanying documentation site on (1.) the homepage/'table of contents' page blurb, and (2.) on the inner details page for the item |
-| **repo_url** | absolute URL<br>*example: https://<path-to-repository>/* | *(OPTIONAL)* Links to accompanying repository on (1.) the homepage/'table of contents' page blurb, and (2.) on the inner details page for the item |
+| **docs_url** | absolute URL<br>*example: `https://<path-to-documentation-site>/`* | *(OPTIONAL)* Links to accompanying documentation site on (1.) the homepage/'table of contents' page blurb, and (2.) on the inner details page for the item |
+| **repo_url** | absolute URL<br>*example: `https://<path-to-repository>/`* | *(OPTIONAL)* Links to accompanying repository on (1.) the homepage/'table of contents' page blurb, and (2.) on the inner details page for the item |
 | **related:**<br>**- title** | text<br>*example: Title of related project* | *(OPTIONAL)* Appears as link text under 'Related' heading at the bottom of an inner details page for an item |
 | **related:**<br>**- description** | text<br>*example: Description of related project* | *(OPTIONAL)* Use for brief description displayed as list item text under 'Related' heading at the bottom of an inner details page for an item |
-| **related:**<br>**- url** | relative URL<br>*example: /<your-collection-name-without-leading-underscore>/<your-related-page-name>.html* | *(REQUIRED if using 'title')* Used as `href` attribute value for link under 'Related' heading at the bottom of an inner details page for an item |
+| **related:**<br>**- url** | relative URL<br>*example: `/<your-collection-name-without-leading-underscore>/<your-related-page-name>.html`* | *(REQUIRED if using 'title')* Used as `href` attribute value for link under 'Related' heading at the bottom of an inner details page for an item |
 
 ### Layouts
 
