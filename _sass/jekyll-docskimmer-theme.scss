@@ -413,7 +413,6 @@ h1,h2,h2,h4,h5,h6{color:$blue}
 .project-list__heading{color:$darkBlue}
 
 .project-list__link {
-    clear:both;
     display:table;
     margin:0.5em 0;
     &:after {
