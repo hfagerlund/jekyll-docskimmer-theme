@@ -100,6 +100,8 @@ Demo of [Jekyll docSkimmer theme on GitHub Pages](https://hfagerlund.github.io/)
 
 The features of __corresponding version numbers__ of **jekyll-docskimmer-theme** and **mkdocs-docskimmer** are *almost* identical, with a few exceptions (see notes under 'REMOVED' and 'ADDED' below):
 
+* 0.1.2 - March 24, 2018. **Changed**: Position of 'Repo' link on inner pages is now consistent, whether or not an image is included on the page (improved usability).
+
 * 0.1.1 - December 3, 2017. Initial port of [mkdocs-docskimmer](https://github.com/hfagerlund/mkdocs-docskimmer) (v.0.1.1/latest release) to Jekyll.
  * **REMOVED**: Menu panel-related styles and script (not required since collapsable 'On this Page' panel in mkdocs-docskimmer is replaced by the 'table of contents'-style homepage in jekyll-docskimmer-theme); styles related to the second-level top navigation bar.
  * **ADDED**: Style customizations required by new jekyll-docskimmer-theme layouts. (These are located in the main theme stylesheet `jekyll-docskimmer-theme.scss`.)
