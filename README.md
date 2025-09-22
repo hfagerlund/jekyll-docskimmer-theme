@@ -2,7 +2,7 @@
 
 jekyll-docskimmer-theme is the official port of [docSkimmer theme](https://github.com/hfagerlund/mkdocs-docskimmer/) from [MkDocs](https://github.com/mkdocs/mkdocs/) to [Jekyll](https://github.com/jekyll/jekyll/).
 
-[[Demo of Jekyll docSkimmer theme on GitHub Pages](https://hfagerlund.github.io/jekyll-docskimmer-theme)]
+[[Demo of Jekyll docSkimmer theme on GitHub Pages](https://hfagerlund.github.io/gh_projects/jekyll-docskimmer-theme.html)]
 
 ## Features
 
